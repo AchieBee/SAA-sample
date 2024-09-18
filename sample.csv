@@ -1,0 +1,49 @@
+Question,Ans1,Ans2,Ans3,Ans4,Correct ans,check_radio
+"A company is storing an access key (access key ID and secret access key) in a text file on a custom
+AMI The company uses the access key to access DynamoDB tables from instances created from the
+AMI The security team has mandated a more secure solution.
+Which solution will meet the security team’s mandate?
+A. Put the access key in an S3 bucket, and retrieve the access key on boot from the instance.
+B. Pass the access key to the instances through instance user data.
+C. Obtain the access key from a key server launched in a private subnet.
+D. Create an IAM role with permissions to access the table, and launch all instances with the new role.","Put the access key in an S3 bucket, and retrieve the access key on boot from the instance.",Pass the access key to the instances through instance user data.,Obtain the access key from a key server launched in a private subnet.,"Create an IAM role with permissions to access the table, and launch all instances with the new role.",4,radio
+"Company salespeople upload their sales figures daily. A Solutions Architect needs a durable storage
+solution for these documents that also protects against users accidentally deleting important
+documents.
+Which action will protect against unintended user actions?
+A. Store data in an EBS volume and create snapshots once a week.
+B. Store data in an S3 bucket and enable versioning.
+C. Store data in two S3 buckets in different AWS regions.
+D. Store data on EC2 instance storage.",Store data in an EBS volume and create snapshots once a week.,Store data in an S3 bucket and enable versioning.,Store data in two S3 buckets in different AWS regions.,Store data on EC2 instance storage.,2,radio
+"A Solutions Architect is designing a critical business application with a relational database that runs
+on an EC2 instance. It requires a single EBS volume that can support up to 16,000 IOPS.
+Which Amazon EBS volume type can meet the performance requirements of this application?
+A. EBS Provisioned IOPS SSD
+B. EBS Throughput Optimized HDD
+C. EBS General Purpose SSD
+D. EBS Cold HDD",EBS Provisioned IOPS SSD,EBS Throughput Optimized HDD,EBS General Purpose SSD,EBS Cold HDD,1,radio
+"An application saves the logs to an S3 bucket. A user wants to keep the logs for one month for
+troubleshooting purposes, and then purge the logs.
+What feature will enable this?
+A. Adding a bucket policy on the S3 bucket.
+B. Configuring lifecycle configuration rules on the S3 bucket.
+C. Creating an IAM policy for the S3 bucket.
+D. Enabling CORS on the S3 bucket.",Adding a bucket policy on the S3 bucket.,Configuring lifecycle configuration rules on the S3 bucket.,Creating an IAM policy for the S3 bucket.,Enabling CORS on the S3 bucket.,2,radio
+"An application running on EC2 instances processes sensitive information stored on Amazon S3. The
+information is accessed over the Internet. The security team is concerned that the Internet
+connectivity to Amazon S3 is a security risk.
+Which solution will resolve the security concern?
+A. Access the data through an Internet Gateway.
+B. Access the data through a VPN connection.
+C. Access the data through a NAT Gateway.
+D. Access the data through a VPC endpoint for Amazon S3.",Access the data through an Internet Gateway.,Access the data through a VPN connection.,Access the data through a NAT Gateway.,Access the data through a VPC endpoint for Amazon S3.,4,radio
+"A Solutions Architect is designing an online shopping application running in a VPC on EC2 instances
+behind an ELB Application Load Balancer. The instances run in an Auto Scaling group across
+multiple Availability Zones. The application tier must read and write data to a customer managed
+database cluster. There should be no access to the database from the Internet, but the cluster must
+be able to obtain software patches from the Internet.
+Which VPC design meets these requirements?
+A. Public subnets for both the application tier and the database cluster
+B. Public subnets for the application tier, and private subnets for the database cluster
+C. Public subnets for the application tier and NAT Gateway, and private subnets for the database cluster
+D. Public subnets for the application tier, and private subnets for the database cluster and NAT Gateway",Public subnets for both the application tier and the database cluster,"Public subnets for the application tier, and private subnets for the database cluster","Public subnets for the application tier and NAT Gateway, and private subnets for the database cluster","Public subnets for the application tier, and private subnets for the database cluster and NAT Gateway",3,radio
